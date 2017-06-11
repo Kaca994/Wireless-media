@@ -1,0 +1,102 @@
+
+body{
+    padding: 0px;
+    margin: 0 auto;
+    font-family: sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+}
+*, 
+
+*:before, *:after {
+  box-sizing: inherit;
+}
+
+a{
+    text-decoration: none;
+    outline: none;
+    color: gray;
+}
+
+
+
+@media (min-width: 768px){
+
+/* --------------------------------------------------
+Container
+-------------------------------------------------- */
+
+
+div#container, div.container { position: relative; width: 750px; margin: 0 auto; padding: 0; padding-top: 1%;}
+ 
+ 
+/* --------------------------------------------------
+Grid
+-------------------------------------------------- */
+.column-row, .row { margin: 0 0 0; }
+.column, .columns { float: left; display: inline; margin: 0 0 0 50px;}
+ 
+.one { width: 50px; }
+.two { width: 150px; }
+.three { width: 250px; }
+.four { width: 350px; }
+.five { width: 450px; }
+.six { width: 550px; }
+.seven { width: 650px; }
+.eight { width: 750px; }
+ 
+.offset-by-one-half { margin-left: 50px; }
+.offset-by-one { margin-left: 100px; }
+.offset-by-two { margin-left: 200px; }
+.offset-by-three { margin-left: 300px; }
+.offset-by-four { margin-left: 400px; }
+.offset-by-five { margin-left: 500px; }
+.offset-by-six { margin-left: 600px; }
+ 
+/* Clear the columns automagically, thanks @kneath */
+.column-row:after, .row:after, .clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+* html .column-row, * html .row, * html .clearfix { height: 1%; }
+.column-row, .row, .clearfix { display: inline-block; }
+.column-row, .row, .clearfix { display: block; }
+ 
+/* IE6 Problems ---------- */
+body.ie .column-row { width: 767px; }
+    body.ie .two-thirds .column-row { width: 800px; }
+}
+
+
+@media (min-width: 480px) and (max-width: 767px){
+    
+    /* --------------------------------------------------
+Grid
+-------------------------------------------------- */
+div#container-m, div.container-m { position: relative; width: 479px; margin: 0 auto; padding: 0; padding-top: 1;}    
+    
+.column-row, .row { margin: 0 0 0px; }
+.column, .columns { float: left; display: inline; margin: 0 0 0;}
+ 
+.one-m { width: 50px; }
+.two-m { width: 150px; }
+.three-m { width: 250px; }
+.four-m { width: 350px; }
+.five-m { width: 450px; }
+
+
+
+.offset-by-one-half-m { margin-left: 50px; }
+.offset-by-one-m { margin-left: 100px; }
+.offset-by-two-m { margin-left: 200px; }
+.offset-by-three-m { margin-left: 300px; }
+.offset-by-four-m { margin-left: 400px; }
+.offset-by-five-m { margin-left: 500px; }
+.offset-by-six-m { margin-left: 600px; }
+ 
+/* Clear the columns automagically, thanks @kneath */
+.column-row:after, .row:after, .clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+* html .column-row, * html .row, * html .clearfix { height: 1%; }
+.column-row, .row, .clearfix { display: inline-block; }
+.column-row, .row, .clearfix { display: block; }
+  
+}
