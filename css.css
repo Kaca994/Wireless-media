@@ -11,12 +11,47 @@ ul{
 }
 
 
+
 @media (max-width: 479px){
     
-    .container{
+      .container{
         width: 100%;
         text-align: center;
     }
+    
+    
+.menuUl{
+    display: inline-block;
+    padding: 0;
+    font-size: 16px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    text-align: left;
+    font-weight: 200;
+    color: white;
+    width: 100%;
+}
+
+ul > li{
+    border-bottom: 2px solid white;
+    padding: 5px 0px 5px 10px;
+    width: 100%;
+}
+    .lightGreen{
+    background-color: #bbd547;
+}
+
+.Green{
+    background-color: #81b36e;
+}
+
+.lightBlue{
+    background-color: #429099;
+}
+
+.Blue{
+    background-color: #1375b8;
+}
+    
     
     .navigation{
         display: flex;
@@ -62,12 +97,23 @@ ul{
         justify-content: space-around;
     }
     
+    .inputStyle{
+        border-radius: 5px;
+        width: 300px;
+        border: 1px solid lightgray;
+        line-height: 2;
+        margin-bottom: 10px;
+        color: gray;
+        text-align: center;
+        text-transform: capitalize;
+        outline: none;
+    }
+    
     .text{
         color:#757575;
         height: 50px;
         font-size: 35px;
     }
-    
     
     .placeholder{
         padding-top: 20px;
@@ -158,6 +204,12 @@ ul{
         justify-content: space-between;
     }
     
+    .search{
+        display: flex;
+        align-items: center;
+        width: 50px;
+        justify-content: flex-end
+    }
     
     #nav-tablet, #search, #logo{
         display: flex;
@@ -185,7 +237,6 @@ ul{
         background-color: #bbd547;
     }
 
-    
     .hero{
         background-image: url(img/dotsMid.png);
         background-position: center;
@@ -218,7 +269,6 @@ ul{
         font-size: 20px;
         text-align: center;
     }
-    
     
     .placeholder{
         height: 100px;
@@ -278,7 +328,6 @@ ul{
         align-items: center;
         justify-content: flex-start;
     }
-
     
     .navBottom{
         margin: 0 50px 0 20px; 
@@ -298,11 +347,29 @@ ul{
         justify-content: center;
     }
 
+    .inputPlace{
+        display: block;
+        text-align: right;
+    }
+    
+     .inputStyle{
+        border-radius: 5px;
+        width: 250px;
+        border: 1px solid lightgray;
+        line-height: 2;
+        margin-bottom: 10px;
+        color: gray;
+        text-align: center;
+        text-transform: capitalize;
+        outline: none;
+    }
+
 }
 
 
 
 @media (min-width: 768px){
+
 
 .navigation{
     height: 50px;
@@ -315,7 +382,9 @@ ul{
     display: none;
 }
     
-#nav{display: block;}
+#nav{
+    display: block;
+    }
 
 #logo{
     padding-top: 10px;
@@ -348,10 +417,11 @@ li{
 
     
 .hero{
+    
     background-image: url(img/dots.png);
     background-position: center;
     background-repeat: no-repeat;
-     height: 250px;
+    height: 250px;
     background-color: #f3f3f3;
     display: flex;
     align-items: center;
@@ -375,6 +445,10 @@ li{
     
      #caruselSmall, #hamburgerPic{
         display: none;
+    }
+    
+    a:link{
+        color: gray;
     }
     
     a.lightGreen:hover,  a.lightGreen:active,  a.lightGreen:focus{
